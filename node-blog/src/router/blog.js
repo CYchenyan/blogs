@@ -14,29 +14,41 @@ const handleBlogRouter = (req, res) => {
   }
 
   if (method === "GET" && req.path === "/api/blog/detail") {
-    const data = getDetail(id)
-    return new SuccessModel(data);
+    const result = getDetail(id)
+    return result.then(data => (new SuccessModel(data)))
   }
 
   if (method === "POST" && req.path === "/api/blog/new") {
-    const postData = newBlog(req.body);
-    return new SuccessModel(postData)
+    // TODO 待开发登录时修改author假数据， 登录后获取登陆名
+    const author = "chenyan"
+    req.body.author = author;
+
+    const result = newBlog(req.body);
+    return result.then(data => (new SuccessModel(data)))
   }
 
   if (method === "POST" && req.path === "/api/blog/update") {
-    const updateResult = updateBlog(id, req.body)
-    if (updateResult) {
-      return new SuccessModel(updateResult)
-    }
-    return new ErrorModel("更新blog失败")
+    return updateBlog(id, req.body)
+      .then(val => {
+        if (val) {
+          return new SuccessModel(val)
+        }
+        return new ErrorModel("更新blog失败")
+      })
   }
 
   if (method === "POST" && req.path === "/api/blog/del") {
-    const delResult = delBlog(id);
-    if(delResult){
-      return new SuccessModel(delResult)
-    }
-    return "删除blog失败"
+     // TODO 待开发登录时修改author假数据， 登录后获取登陆名
+     const author = "chenyan"
+     req.body.author = author;
+
+    return delBlog(id, author)
+      .then(val => {
+        if (val) {
+          return new SuccessModel(val)
+        }
+        return new ErrorModel("删除blog失败")
+      })
   }
 }
 

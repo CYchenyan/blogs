@@ -4,9 +4,8 @@
     <list default="true" id="c997e4aa-cb54-47e7-83fa-cb6130565e64" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-blog/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-blog/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-blog/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-blog/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node-blog/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node-blog/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-blog/src/controller/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-blog/src/controller/blog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node-blog/src/controller/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-blog/src/controller/user.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-blog/src/router/blog.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-blog/src/router/blog.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/node-blog/src/router/user.js" beforeDir="false" afterPath="$PROJECT_DIR$/node-blog/src/router/user.js" afterDir="false" />
     </list>
@@ -91,7 +90,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/node-blog/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="108">
@@ -127,29 +126,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console_1.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="567">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/blogs">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+            <state relative-caret-position="384">
+              <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
             </state>
           </provider>
         </entry>
@@ -178,7 +159,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -188,7 +169,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -206,6 +186,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,7 +194,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="database.console.LAST_STATE" value="false" />
+    <property name="database.console.LAST_STATE" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -277,23 +258,25 @@
       <updated>1574930178093</updated>
       <workItem from="1574930179365" duration="4261000" />
       <workItem from="1575359097381" duration="5375000" />
+      <workItem from="1575447105598" duration="1146000" />
+      <workItem from="1575858740041" duration="2182000" />
+      <workItem from="1575874504224" duration="47000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9636000" />
+    <option name="totallyTimeSpent" value="13011000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13369964" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13736264" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Favorites" order="6" side_tool="true" />
-      <window_info anchor="bottom" id="Database Console" weight="0.3291536" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3291536" />
@@ -304,8 +287,9 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.2904911" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4075235" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="Database Console" order="12" visible="true" weight="0.3291536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -331,45 +315,20 @@
         </state>
       </provider>
     </entry>
+    <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/users.sql" />
+    <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/blogs" />
+    <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/users" />
+    <entry file="file://$PROJECT_DIR$/node-blog/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="27">
           <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/users.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/blogs">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/users">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console_1.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -380,10 +339,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node-blog/package.json">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
         </state>
       </provider>
     </entry>
