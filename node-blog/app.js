@@ -1,11 +1,12 @@
 const querystring = require("querystring");
 const handleBlogRouter = require("./src/router/blog");
 const handleUserRouter = require("./src/router/user");
+const { set, get } = require("./src/db/redis");
 
 // 获取cookie过期时间
 const getCookieExpies = () => {
   const d = new Date();
-  d.setTime(d.getTime() + (24 * 60 * 60 *1000));
+  d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
   return d.toGMTString();
 }
 
@@ -58,51 +59,70 @@ const serverHandle = (req, res) => {
   })
 
   // 解析session
+  // let needSetCookie = false;
+  // let userId = req.cookie.userId;
+  // if (userId) {
+  //   if (!SESSION_DATA[userId]) {
+  //     SESSION_DATA[userId] = {};
+  //   }
+  // } else {
+  //   needSetCookie = true;
+  //   userId = `${Date.now()}_${Math.random()}`;
+  //   SESSION_DATA[userId] = {};
+  // }
+  // req.session = SESSION_DATA[userId]
+
+  // redis 存贮session
   let needSetCookie = false;
   let userId = req.cookie.userId;
-  console.log("userId", userId)
-  if (userId) {
-    if (!SESSION_DATA[userId]) {
-      SESSION_DATA[userId] = {};
-    }
-  } else {
+  if (!userId) {
     needSetCookie = true;
     userId = `${Date.now()}_${Math.random()}`;
-    SESSION_DATA[userId] = {};
+    set(userId, {})
   }
-  req.session = SESSION_DATA[userId]
 
-  //  处理postData
-  getPostData(req).then(postData => {
-    req.body = postData
+  get(userId)
+    .then(sessionData => {
+      if (sessionData === null) {
+        set(userId, {});
+        req.session = {}
+      } else {
+        req.session = sessionData
+      }
+      req.sessionId = userId
+      //  处理postData
+      return getPostData(req)
+    })
+    .then(postData => {
+      req.body = postData
 
-    const blogResult = handleBlogRouter(req, res);
-    if (blogResult) {
-      blogResult.then(blogData => {
-        if (needSetCookie) {
-          res.setHeader('Set-Cookie', `userId=${userId}; path=/; httpOnly; expires=${getCookieExpies()}`)
-        }
-        res.end(JSON.stringify(blogData))
-      })
-      return
-    }
+      const blogResult = handleBlogRouter(req, res);
+      if (blogResult) {
+        blogResult.then(blogData => {
+          if (needSetCookie) {
+            res.setHeader('Set-Cookie', `userId=${userId}; path=/; httpOnly; expires=${getCookieExpies()}`)
+          }
+          res.end(JSON.stringify(blogData))
+        })
+        return
+      }
 
-    const userResult = handleUserRouter(req, res);
-    if (userResult) {
-      userResult.then(userData => {
-        if (needSetCookie) {
-          res.setHeader('Set-Cookie', `userId=${userId}; path=/; httpOnly; expires=${getCookieExpies()}`)
-        }
-        res.end(JSON.stringify(userData))
-      })
+      const userResult = handleUserRouter(req, res);
+      if (userResult) {
+        userResult.then(userData => {
+          if (needSetCookie) {
+            res.setHeader('Set-Cookie', `userId=${userId}; path=/; httpOnly; expires=${getCookieExpies()}`)
+          }
+          res.end(JSON.stringify(userData))
+        })
 
-      return
-    }
+        return
+      }
 
-    res.writeHead(404, { "Content-type": "text/plain" });
-    res.write("404 Not Found\n");
-    res.end();
-  })
+      res.writeHead(404, { "Content-type": "text/plain" });
+      res.write("404 Not Found\n");
+      res.end();
+    })
 
 }
 

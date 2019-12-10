@@ -1,5 +1,6 @@
 const { login } = require("../controller/user")
 const { SuccessModel, ErrorModel } = require("../model/resModel")
+const { set } = require("../db/redis")
 
 const handleUserRouter = (req, res) => {
   const method = req.method;
@@ -12,7 +13,9 @@ const handleUserRouter = (req, res) => {
         // 操作cookie
         req.session.username = data.username
         req.session.realname = data.realname
-        console.log(req.session)
+        // 同步redis session
+        set(req.sessionId, req.session)
+
         return new SuccessModel(data)
       }
       return new ErrorModel("登陆失败")
@@ -21,7 +24,7 @@ const handleUserRouter = (req, res) => {
 
   // 登陆验证测试
   if (method === "GET" && req.path === "/api/user/login-test") {
-console.log("test", req.session)
+    console.log("test", req.session)
     if (req.session.username) {
       return Promise.resolve(
         new SuccessModel({
