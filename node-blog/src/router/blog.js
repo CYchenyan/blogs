@@ -1,12 +1,21 @@
 const { getList, getDetail, newBlog, updateBlog, delBlog } = require("../controller/blog");
 const { SuccessModel, ErrorModel } = require("../model/resModel")
 
+const loginCheck = (req) => {
+  if (!req.session.username) {
+    return Promise.resolve(
+      new ErrorModel("尚未登陆")
+    )
+  }
+}
+
 const handleBlogRouter = (req, res) => {
   const method = req.method;
 
   const id = req.query.id
   // 获取博客列表
   if (method === "GET" && req.path === "/api/blog/list") {
+
     const author = req.query.author || "";
     const keyword = req.query.keyword || "";
     const result = getList(author, keyword);
@@ -19,15 +28,23 @@ const handleBlogRouter = (req, res) => {
   }
 
   if (method === "POST" && req.path === "/api/blog/new") {
-    // TODO 待开发登录时修改author假数据， 登录后获取登陆名
-    const author = "chenyan"
-    req.body.author = author;
+    const loginResult = loginCheck(req);
+    if (loginResult) {
+      return loginResult
+    }
+
+    req.body.author = req.session.username;
 
     const result = newBlog(req.body);
     return result.then(data => (new SuccessModel(data)))
   }
 
   if (method === "POST" && req.path === "/api/blog/update") {
+    const loginResult = loginCheck(req);
+    if (loginResult) {
+      return loginResult
+    }
+
     return updateBlog(id, req.body)
       .then(val => {
         if (val) {
@@ -38,10 +55,12 @@ const handleBlogRouter = (req, res) => {
   }
 
   if (method === "POST" && req.path === "/api/blog/del") {
-     // TODO 待开发登录时修改author假数据， 登录后获取登陆名
-     const author = "chenyan"
-     req.body.author = author;
+    const loginResult = loginCheck(req);
+    if (loginResult) {
+      return loginResult
+    }
 
+    req.body.author = req.session.username;
     return delBlog(id, author)
       .then(val => {
         if (val) {

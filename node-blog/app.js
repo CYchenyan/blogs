@@ -2,6 +2,7 @@ const querystring = require("querystring");
 const handleBlogRouter = require("./src/router/blog");
 const handleUserRouter = require("./src/router/user");
 const { set, get } = require("./src/db/redis");
+const { access } = require("./src/utils/log")
 
 // 获取cookie过期时间
 const getCookieExpies = () => {
@@ -41,6 +42,9 @@ const SESSION_DATA = {};
 const serverHandle = (req, res) => {
   res.setHeader("Content-type", "application/json");
 
+  // 记录访问日志
+  access(`${req.method} -- ${req.url} -- ${req.headers['user-agent']} -- ${Date.now()}`)
+
   // 获取path
   req.path = req.url.split("?")[0];
 
@@ -57,20 +61,6 @@ const serverHandle = (req, res) => {
     const val = arr[1];
     req.cookie[key] = val;
   })
-
-  // 解析session
-  // let needSetCookie = false;
-  // let userId = req.cookie.userId;
-  // if (userId) {
-  //   if (!SESSION_DATA[userId]) {
-  //     SESSION_DATA[userId] = {};
-  //   }
-  // } else {
-  //   needSetCookie = true;
-  //   userId = `${Date.now()}_${Math.random()}`;
-  //   SESSION_DATA[userId] = {};
-  // }
-  // req.session = SESSION_DATA[userId]
 
   // redis 存贮session
   let needSetCookie = false;
