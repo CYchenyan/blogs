@@ -24,7 +24,7 @@ rl.on("line", (lineData) => {
   sum++;
 
   const arr = lineData.split(" -- ");
-  if (arr[2] && arr[2].indexOf("Chrome") !== -1) {
+  if (arr[2] && arr[2].indexOf("Chro  me") !== -1) {
     chromeNum++
   } 
 })
