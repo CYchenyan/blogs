@@ -2,7 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c997e4aa-cb54-47e7-83fa-cb6130565e64" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/blog-react/config/env.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/config/jest/cssTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/config/jest/fileTransform.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/config/modules.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/config/paths.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/config/pnpTs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/config/webpack.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/config/webpackDevServer.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/jest.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/scripts/build.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/scripts/start.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blog-react/scripts/test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-react/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/blog-react/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-react/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/blog-react/src/pages/app/App.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-react/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-react/src/pages/app/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-react/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-react/src/pages/app/App.test.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-react/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/blog-react/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog-react/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/blog-react/yarn.lock" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -70,10 +88,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node-blog/package.json">
+        <entry file="file://$PROJECT_DIR$/blog-react/package.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="108">
-              <caret line="4" column="21" selection-start-line="4" selection-start-column="21" selection-end-line="4" selection-end-column="21" />
+            <state relative-caret-position="1383">
+              <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-react/jest.config.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1323">
+              <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
             </state>
           </provider>
         </entry>
@@ -88,30 +115,37 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/node-blog/bin/www.js">
+        <entry file="file://$PROJECT_DIR$/blog-react/config/webpack.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
-            </state>
+            <state relative-caret-position="-2892" />
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console.sql">
+        <entry file="file://$PROJECT_DIR$/blog-react/src/pages/app/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="27">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="-87">
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console_1.sql">
+        <entry file="file://$PROJECT_DIR$/blog-react/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="384">
-              <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+            <state>
+              <folding>
+                <element signature="e#0#26#0" expanded="true" />
+              </folding>
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/blog-react/src/logo.svg">
+          <provider selected="true" editor-type-id="images" />
         </entry>
       </file>
     </leaf>
@@ -129,6 +163,9 @@
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console.sql" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console_1.sql" />
+        <option value="$PROJECT_DIR$/blog-react/jest.config.js" />
+        <option value="$PROJECT_DIR$/blog-react/package.json" />
+        <option value="$PROJECT_DIR$/blog-react/src/pages/app/App.js" />
       </list>
     </option>
   </component>
@@ -150,7 +187,43 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="ProjectPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-react" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blogs" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blogs" type="462c0819:PsiDirectoryNode" />
+              <item name="blog-react" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -169,6 +242,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog-react/src/pages/app" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -226,16 +304,15 @@
       <workItem from="1575858740041" duration="2182000" />
       <workItem from="1575874504224" duration="47000" />
       <workItem from="1578279004493" duration="1000" />
-      <workItem from="1578293283527" duration="5000" />
+      <workItem from="1578293283527" duration="2076000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13017000" />
+    <option name="totallyTimeSpent" value="15088000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.13980465" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -254,7 +331,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.4075235" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.23092999" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info active="true" anchor="bottom" id="Database Console" order="12" visible="true" weight="0.3291536" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -285,6 +362,27 @@
     <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/users.sql" />
     <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/blogs" />
     <entry file="das://c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/schema/blog/table/users" />
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console_1.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node-blog/bin/www.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/node-blog/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -299,24 +397,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/node-blog/bin/www.js">
+    <entry file="file://$PROJECT_DIR$/blog-react/jest.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+        <state relative-caret-position="1323">
+          <caret line="49" column="2" selection-start-line="49" selection-start-column="2" selection-end-line="49" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console.sql">
+    <entry file="file://$PROJECT_DIR$/blog-react/config/webpack.config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="-2892" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-react/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1383">
+          <caret line="86" column="5" lean-forward="true" selection-start-line="86" selection-start-column="5" selection-end-line="86" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/c2b1e89e-a5b9-47ad-9eb8-1ed5d2e9e6af/console_1.sql">
+    <entry file="file://$PROJECT_DIR$/blog-react/src/pages/app/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="23" column="78" selection-start-line="23" selection-start-column="78" selection-end-line="23" selection-end-column="78" />
+        <state relative-caret-position="-87">
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-react/src/logo.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog-react/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
